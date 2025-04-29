@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Susy Nava's Birthday Giveaway</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #111, #222);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      background: #1e1e1e;
+      position: relative;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #ffc107;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #eee;
+    }
+    .timer {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      color: #ff4081;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 1.8rem;
+      text-align: center;
+      color: #f9f871;
+      margin-bottom: 30px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .card {
+      background: #333;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    }
+    .card:hover {
+      background: #444;
+      transform: translateY(-5px);
+    }
+    .card a {
+      color: #00e5ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .email {
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 40px;
+    }
+    .email a {
+      color: #4caf50;
+      font-weight: bold;
+    }
+    #congrats-container {
+      text-align: center;
+      font-size: 1rem;
+      color: #ffc400;
+      margin-top: 30px;
+      transition: opacity 1s ease-in-out;
+      height: 30px;
+    }
+
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      background: #ff4081;
+      top: -10px;
+      animation: fall 5s linear infinite;
+      z-index: 1000;
+    }
+    @keyframes fall {
+      to {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Susy Nava's 45th Birthday Giveaway!</h1>
+    <p>Send any gift card from $200 to $500 and get rewarded up to $1,250!</p>
+    <div class="timer" id="countdown"></div>
+  </header>
+
+  <div class="container">
+    <div class="section-title">Choose a Gift Card to Purchase</div>
+    <div class="cards">
+      <div class="card"><a href="https://www.giftcards.com" target="_blank">Amazon Gift Card</a></div>
+      <div class="card"><a href="https://www.apple.com/shop/gift-cards" target="_blank">Apple iTunes Card</a></div>
+      <div class="card"><a href="https://play.google.com/intl/en_us/about/giftcards/" target="_blank">Google Play Card</a></div>
+      <div class="card"><a href="https://usa.visa.com" target="_blank">Visa Gift Card</a></div>
+      <div class="card"><a href="https://www.bestbuy.com" target="_blank">BestBuy Gift Card</a></div>
+      <div class="card"><a href="https://www.target.com" target="_blank">Target Gift Card</a></div>
+      <div class="card"><a href="https://www.walmart.com" target="_blank">Walmart Gift Card</a></div>
+      <div class="card"><a href="https://www.sephora.com" target="_blank">Sephora Gift Card</a></div>
+    </div>
+
+    <div class="email">
+      Send your purchased gift card to:
+      <br />
+      <a href="mailto:suszynava@gmail.com">suszynava@gmail.com</a>
+    </div>
+
+    <div id="congrats-container"></div>
+  </div>
+
+
+
+
+<br><br>
+
+
+
+
+
+<div style="padding: 20px; background-color: #222; color: #fff; border-radius: 10px; max-width: 700px; margin: auto; font-family: 'Segoe UI', sans-serif;">
+  <h2 style="text-align: center; color: #f9f871;">Gift Card Rewards Table</h2>
+
+  <p style="text-align: center; color: #ccc; font-size: 15px; margin-top: 10px;">
+    Celebrate <strong>Susy Nava's 45th birthday</strong> by sending in any gift card worth $200 to $500 and receive a generous cash reward via bank transfer.
+  </p>
+
+  <p style="color: #ddd; font-size: 15px; margin-top: 20px;">
+    <strong>How it works:</strong><br>
+    1. Buy a valid gift card from any trusted source (e.g. Apple, Amazon, Steam, etc.).<br>
+    2. Email the gift card details (clear image or code) to <a href="mailto:suszynava@gmail.com" style="color: #f9f871; text-decoration: underline;">suszynava@gmail.com</a><br>
+    3. Include your <strong>Full Name</strong> and <strong>Bank Account Number</strong> in the email.<br>
+    4. Once verified, your reward will be sent to your bank account within 30 minutes.<br>
+  </p>
+
+  <p style="color: #9ef59c; font-weight: bold; margin-top: 15px;">
+    All transfers are secure and immediate upon card validation.
+  </p>
+
+  <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+    <thead>
+      <tr style="background-color: #333; color: #ffc107;">
+        <th style="padding: 10px; border: 1px solid #444;">Gift Card Amount</th>
+        <th style="padding: 10px; border: 1px solid #444;">Rewards/How You Receive (via Bank Transfer)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 10px; border: 1px solid #444;">$200</td>
+        <td style="padding: 10px; border: 1px solid #444;">$450</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border: 1px solid #444;">$300</td>
+        <td style="padding: 10px; border: 1px solid #444;">$700</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border: 1px solid #444;">$400</td>
+        <td style="padding: 10px; border: 1px solid #444;">$1,000</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border: 1px solid #444;">$500</td>
+        <td style="padding: 10px; border: 1px solid #444;">$1,250</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+  <!-- Confetti effects -->
+  <script>
+    for (let i = 0; i < 50; i++) {
+      const confetti = document.createElement("div");
+      confetti.className = "confetti";
+      confetti.style.left = Math.random() * 100 + "vw";
+      confetti.style.animationDuration = 3 + Math.random() * 2 + "s";
+      confetti.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
+      document.body.appendChild(confetti);
+    }
+  </script>
+
+  <!-- Real Countdown Timer -->
+  <script>
+    const countdown = document.getElementById("countdown");
+    const endDate = new Date("June 17, 2025 23:59:59").getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = endDate - now;
+
+      if (distance <= 0) {
+        countdown.innerText = "Giveaway Closed!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hrs = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerText = `Offer ends in: ${days}d ${hrs}h ${mins}m ${secs}s`;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+
+  <!-- Fade-in Congratulatory Messages -->
+  <script>
+    const messages = [
+      "Happy 45th Birthday Susy Nava!",
+      "Congratulations Susy! You’re truly inspiring!",
+      "Cheers to a wonderful celebration, Susy Nava!",
+      "Wishing you joy and blessings, Susy!",
+      "Much love on your special day, Susy Nava!",
+      "Sending birthday cheers to the amazing Susy!",
+      "You deserve all the love today, Susy!",
+      "Happy Birthday Susy, may your light shine brighter!",
+      "45 and fabulous! Congrats Susy Nava!",
+      "Enjoy your day, Queen Susy!",
+      "May this new year bring more success, Susy!",
+      "The world celebrates you today, Susy Nava!",
+      "Hooray for 45 years of grace and strength!",
+      "Susy Nava, you’re a gift to us all!",
+      "Happy Birthday from all your admirers!",
+      "Stay blessed, elegant Susy!",
+      "Here's to more years of greatness, Susy Nava!",
+      "Congratulations on your special day, Susy!",
+      "You’re loved and appreciated, Susy!",
+      "Birthday wishes flowing your way, Susy Nava!",
+      "Shine on, it’s your day Susy!",
+      "You're an icon, Susy Nava!",
+      "May your birthday be as bright as your smile!",
+      "45 never looked so good—Happy Birthday Susy!",
+      "Endless joy to you today, Susy!",
+      "You inspire so many, Susy Nava!",
+      "Happy 45th, Susy! You deserve the world!",
+      "Wishing you more happiness and peace, Susy!",
+      "Susy Nava—celebrated and loved!",
+      "It’s your season of celebration, Susy!",
+      "Thanks for being amazing, Susy Nava!",
+      "You make life beautiful, Susy!",
+      "A big toast to 45, Susy Nava!",
+      "Enjoy the spotlight, birthday queen!",
+      "Your kindness is unmatched, Susy!",
+      "Happy Birthday to a wonderful woman!",
+      "Big cheers from friends and fans, Susy Nava!",
+      "Your legacy grows, Happy Birthday!",
+      "We love you Susy! Keep glowing!",
+      "May your day be filled with laughter, Susy!",
+      "A beautiful soul turns 45 today!",
+      "Salute to greatness—Happy Birthday Susy!",
+      "Susy Nava, the world applauds you!",
+      "Keep winning, birthday star!",
+      "Happy Birthday to our inspiration—Susy Nava!",
+      "May every gift card multiply your blessings!",
+      "You are cherished today and always!",
+      "Best wishes from around the globe, Susy!",
+      "Keep shining like the diamond you are!",
+      "45 amazing years and many more ahead!"
+    ];
+
+    let index = 0;
+    const container = document.getElementById("congrats-container");
+
+    function showNextMessage() {
+      container.style.opacity = 0;
+      setTimeout(() => {
+        container.textContent = messages[index];
+        container.style.opacity = 1;
+        index = (index + 1) % messages.length;
+      }, 500);
+    }
+
+    setInterval(showNextMessage, 4000);
+    showNextMessage();
+  </script>
+
+<br><br>
+<div style="padding: 20px; margin-top: 40px; background-color: #111; color: #fff; border-radius: 10px; max-width: 700px; margin: auto; font-family: 'Segoe UI', sans-serif; animation: fadeIn 2s ease-in-out;">
+  <h2 style="color: #f9f871; text-align: center;">Payment Issues? Contact Susy Directly</h2>
+  <p style="color: #ccc; font-size: 15px; text-align: center;">
+    If you've sent your gift card and haven't received your bank transfer within 30 minutes, please call Susy directly for immediate confirmation and processing.
+  </p>
+  <ul style="list-style: none; padding-left: 0; text-align: center; margin-top: 15px;">
+    <li style="margin-bottom: 8px;"><strong>+1 323 761 0456</strong></li>
+    <li style="margin-bottom: 8px;"><strong>+1 323 847 4838</strong></li>
+    <li><strong>+1 323 847 3893</strong></li>
+  </ul>
+
+  <hr style="border: 1px solid #444; margin: 30px 0;">
+
+  <h3 style="text-align: center; color: #fbbf24;">You're Invited to Susy Nava's Birthday!</h3>
+  <p style="text-align: center; color: #9ef59c; font-size: 16px;">
+    Join us as we celebrate Susy Nava's 45th birthday on <strong>June 16th, 2025</strong>.<br>
+    It's going to be filled with fun, surprises, and giveaways!
+  </p>
+</div>
+
+<!-- Fade-in animation style -->
+<style>
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+
+</body>
+</html>
